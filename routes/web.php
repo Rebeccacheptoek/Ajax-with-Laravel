@@ -23,6 +23,7 @@ Route::get('/fetch_students',$student_controller.'@fetchstudent');
 Route::post('students',$student_controller.'@store');
 Route::get('/edit-student/{stud_id}',$student_controller.'@edit');
 Route::put('/update-student/{stud_id}',$student_controller.'@update');
+Route::delete('/delete-student/{stud_id}',$student_controller.'@destroy');
 
 Auth::routes();
 
